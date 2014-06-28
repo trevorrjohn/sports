@@ -3,21 +3,20 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 gem 'rails', '4.1.2'
 
+gem 'coffee-rails', '~> 4.0.0'
+gem 'jquery-rails'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
-gem 'therubyracer',  platforms: :ruby
-gem 'jquery-rails'
-gem 'turbolinks'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
+gem 'therubyracer',  platforms: :ruby
+gem 'turbolinks'
+gem 'uglifier', '>= 1.3.0'
 
 group :development do
   gem 'pry'
   gem 'pry-nav'
+  gem 'thin'
 end
 
 group :development, :test do
