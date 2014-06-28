@@ -18,7 +18,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', github: 'tjohn/factory_girl_rails', branch: 'tj/allow_optional_dir_param'
   gem 'ffaker'
   gem 'pry-nav'
   gem 'rspec-rails'
