@@ -14,12 +14,12 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 group :development do
-  gem 'pry'
-  gem 'pry-nav'
   gem 'thin'
 end
 
 group :development, :test do
+  gem 'pry'
+  gem 'pry-nav'
   gem 'rspec-rails'
 end
 
