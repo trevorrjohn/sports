@@ -8,17 +8,18 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
 gem 'therubyracer',  platforms: :ruby
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 group :development do
+  gem 'spring'
   gem 'thin'
 end
 
 group :development, :test do
-  gem 'pry'
+  gem 'factory_girl_rails'
+  gem 'ffaker'
   gem 'pry-nav'
   gem 'rspec-rails'
 end
